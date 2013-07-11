@@ -1,5 +1,6 @@
 <?php
 
 $app->get('/', function () use ($app) {
-    return 'Hello world!';
+    return $app['twig']->render('index.twig', array(
+    ));
 })->bind('index');
